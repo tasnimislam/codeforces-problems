@@ -1,0 +1,45 @@
+for _ in range(int(input())):
+	n,m=map(int,input().split())
+
+#another way
+for s in[*open(0)][1:]:
+    x,n,m=map(int,s.split())
+
+#for reading a integer and a string in the next line
+k=input
+for i in[0]*int(k()):
+	n=int(k());s=k();a=b=""
+
+#for reading the entire sequence
+import sys
+p=sys.stdin.read().split("\n")
+
+#input array
+s=list(map(int,input().split()))
+
+#input test case, 2 ta int in second line, ekta array in third line
+import sys
+for i in range(int(input())):
+    print("Case:"+str(i));
+    n,k=map(int,sys.stdin.readline().split())
+    print(str(n),str(k))
+    arr=list(map(int,sys.stdin.readline().split()))
+    print(arr)
+
+#input array in c
+for (int i=1; i<=n; i++)
+    {
+        cin>>x;
+        a.push_back(x);
+    }
+
+#input with dynamic programming
+from math import*
+exec(int(input())*"print(int(input()))\n")
+
+two var in a loop simunteniously
+for neuron_weights, neuron_bais in zip(weights, biases):
+
+#array input
+*a,=map(int,input().split())
+

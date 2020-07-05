@@ -1,0 +1,65 @@
+#include <iostream> 
+#include <cmath> 
+using namespace std; 
+
+
+int main() 
+{ 
+	int n,arr[3][100000],j=1,flag=0;
+	cin>>n;
+	while(j<=n)
+	{
+	    int i=1,row=0,col=0;
+	    while(i<=3)
+	    {
+	        cin>>arr[i][j];
+	        cout<<arr[i][j]<<" ";
+	        if(i==1)
+	        {
+	            if(arr[i][j]%3==2)
+	            {
+	                flag=1;
+	                cout<<"NO"<<endl;
+	                return 0;
+	            }
+	            
+	            col=ceil(arr[i][j]/3);
+	            row=arr[i][j]%3;
+	            
+	            if(row==0)
+	            {
+	                if(arr[2][j]==arr[1][j]-1 && arr[3][j]==arr[1][j]-2) continue;
+	                else
+	                {
+	                    flag=1;
+	                    cout<<"NO"<<endl;
+	                    return 0;
+	                }
+	                
+	            }
+	            
+	            else if(row==1)
+	            {
+	                if(arr[2][j]==arr[1][j]+1 && arr[3][j]==arr[1][j]+2) continue;
+	                else
+	                {
+	                    flag=1;
+	                    cout<<"NO"<<endl;
+	                    return 0;
+	                }
+	                
+	            }
+	                
+	           
+	        }
+	        
+	        i++;
+	    }
+	    cout<<endl;
+	    
+	    j++;
+	}
+	if(!flag) cout<<"YES"<<endl;
+	return 0;
+	
+} 

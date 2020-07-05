@@ -1,0 +1,4 @@
+for _ in range(int(input())):
+    a = [list(map(int, input().split())) for i in '..'][1]
+    mx, n = max(a), len(a)
+    print(n,a)

@@ -1,0 +1,13 @@
+fun main() {
+    repeat(readLine()!!.toInt()) {
+        val (a1, b1) = readLine()!!.split(' ').map{it.toInt()}
+        println("a1 = $a1 and b1 = $b1")
+        val (a2, b2) = readLine()!!.split(' ').map{it.toInt()}
+        println("a2 = $a2 and b2 = $b2")
+    }
+}
+
+#reading datas
+private fun si() = readLine()!!
+private fun ii() = si().toLong()
+private fun mi() = si().split(" ").map { it.toLong() }

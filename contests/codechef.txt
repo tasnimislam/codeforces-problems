@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+#include<algorithm>
+#include<map>
+#include<iterator>
+using namespace std;
+int main()
+{
+    int test,b[100000],d[100000];
+    cin>>test;
+    map<int, int>b1;
+    map<int, int>dMinus1;
+    
+    
+    for(int i=0; i<test; i++)
+    {
+        cin>>b[i];
+        b1.insert(pair<int, int>(b[i],1));
+        cin>>d[i];
+        dMinus1.insert(pair<int, int>(d[i],-1));
+    }
+    
+    b1.insert(dMinus1.begin(),dMinus1.end());
+    sort(b1.begin(), b1.end());
+    map<int, int>::iterator itr;
+    
+    for (itr = b1.begin(); itr != b1.end(); ++itr) { 
+        cout << '\t' << itr->first 
+             << '\t' << itr->second << '\n'; 
+    } 
+    
+    
+    
+}

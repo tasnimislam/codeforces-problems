@@ -1,0 +1,7 @@
+#binary search
+while(small!=big):
+    mid=(small+big+1)/2
+    if():small = mid
+    else: big = mid-1
+
+print(small)

@@ -1,0 +1,15 @@
+#scan an integer
+main :: IO ()
+main = do
+  t <- read <$> getLine :: IO Int
+
+#scan an integer with strings in next line
+
+import Data.Foldable (for_)
+
+main :: IO ()
+main = do
+  t <- read <$> getLine :: IO Int
+  for_ [1..t] $ \_ -> getLine >>= (print . solve)
+
+

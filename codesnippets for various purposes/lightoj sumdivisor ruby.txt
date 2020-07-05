@@ -1,0 +1,18 @@
+# cook your code here
+t = gets.to_i;
+t.times do
+    n, m = gets.split.map(&:to_i)
+    pika = n**m
+    result = 0; 
+    (2..Math.sqrt(pika)).each do |i|
+        if (pika%i==0) 
+            if (i==(pika/i)) 
+                result += i; 
+            else
+                result += (i + pika/i); 
+            end
+        end
+    end
+        
+    puts (result + 1)%1000000007
+end

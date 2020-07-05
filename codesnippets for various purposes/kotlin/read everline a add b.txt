@@ -1,0 +1,5 @@
+fun main() {
+    repeat(readLine()!!.toInt()) {
+       readLine()!!.split(" ").map { it.toInt() }.also { println("${it[1]+it[0]} ") }
+    }
+}

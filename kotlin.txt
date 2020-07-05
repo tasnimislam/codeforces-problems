@@ -1,0 +1,19 @@
+import java.util.Scanner
+
+fun main (args: Array<String>)
+{
+    val reader= Scanner(System. `in`)
+    
+    var testCase: Int = reader.nextInt()
+    
+    for (i in 1..testCase)
+    {
+        val numberInput: Int = reader.nextInt()
+        
+        String numberInputString = Integer.toString(numberInput)
+        System.out.println(numberInputString)
+        
+        
+    }
+}
+

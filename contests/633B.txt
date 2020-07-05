@@ -1,0 +1,10 @@
+# Driver Code 
+if __name__ == "__main__": 
+
+	arr = [1, 10, 5] 
+	n = len(arr) 
+	INT_MIN, INT_MAX = float('-inf'), float('inf') 
+	
+	print(maxSortedAdjacentDiff(arr, n)) 
+
+# This code is contributed by Rituraj Jain 

@@ -1,0 +1,7 @@
+for s in[*open(0)][1:]:
+ n, m ,k = map(int,s.split())
+    card = int(n/k)
+    if m<card : print(m)
+    elif m<2*card : print(m-card)
+    else : print(1   )
+    

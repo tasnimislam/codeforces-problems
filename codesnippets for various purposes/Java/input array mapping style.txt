@@ -1,0 +1,21 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.Arrays;
+import java.math.BigInteger;
+import java.util.stream.*; 
+ 
+/* Name of the class has to be "Main" only if the class is public. */
+public class Codechef
+{
+     public static void main (String[] args) throws java.lang.Exception
+     {
+     	Scanner in =new Scanner(System.in);
+		String str = in.nextLine();
+		int[] arr1=Stream.of(str.split(" ")).mapToInt(Integer::parseInt).toArray();
+		String str2 = in.nextLine();
+		int[] arr2=Stream.of(str2.split(" ")).mapToInt(Integer::parseInt).toArray();
+        
+        
+	}
+}

@@ -1,0 +1,21 @@
+inputDeString=input()
+inputDeString=inputDeString.split('=')
+inputDeString[0]=inputDeString[0].split('+')
+print(inputDeString)
+
+for i in inputDeString
+    lengthString[i]=len(inputDeString[i])
+
+#if abs(lengthString[0]+lengthString[1])-lengthString[2])==2
+    #if (lengthString[0]+lengthString[1])-lengthString[2])==2
+        #removable=max(lengthString[0], lengthString[1])
+        #removableIndex=lengthString.index(removable)
+        #inputDeString[removableIndex]=inputDeString[removableIndex][:-1]
+        #outputDeString=inputDeString[0]+'+'+inputDeString[1]+'='+inputDeString[2]
+        #print(outputDeString)
+    #else
+        #inputDeString[2]=inputDeString[2].append(|)
+        #outputDeString=inputDeString[0]+'+'+inputDeString[1]+'='+inputDeString[2]
+        #print(outputDeString)
+    
+#else print("Impossible")
